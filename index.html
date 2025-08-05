@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medha Morparia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sage-light: #dce3dc;
+      --sage: #a8b2a1;
+      --sage-dark: #5a6853;
+      --accent: #3f4f3c;
+      --bg: #f5f5f2;
+      --font-serif: 'Playfair Display', serif;
+      --font-sans: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--bg);
+      color: var(--accent);
+    }
+
+    header {
+      background-color: var(--sage-light);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      margin: 0;
+      color: var(--sage-dark);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 1rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section h2 {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      border-bottom: 2px solid var(--sage);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      background-color: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 5px solid var(--sage);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .project p {
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .resume-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--sage);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: var(--sage-light);
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Medha Morparia</h1>
+    <p>UX Designer | Researcher | Storyteller</p>
+    <a class="resume-link" href="resume.pdf" download>Download Résumé</a>
+  </header>
+
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+
+    <div class="project">
+      <h3>Designing a Mental Health Tracker App</h3>
+      <p>A user-centered mobile app designed to help individuals track and understand their mental well-being. Conducted user interviews, prototyped in Figma, and iterated based on usability testing.</p>
+    </div>
+
+    <div class="project">
+      <h3>Improving Patient Experiences in Telehealth</h3>
+      <p>Redesigned a telehealth interface for older adults using accessibility principles and heuristic evaluation. Collaborated with clinicians and developers to ensure an inclusive solution.</p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Portfolio Gallery</h2>
+    <div class="gallery">
+      <img src="images/project1.png" alt="Project 1 Screenshot">
+      <img src="images/project2.png" alt="Project 2 Screenshot">
+      <img src="images/project3.png" alt="Project 3 Screenshot">
+      <img src="images/project4.png" alt="Project 4 Screenshot">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a UX designer passionate about creating meaningful digital experiences. With a background in design and research, I blend empathy, aesthetics, and data to craft human-centered solutions. I’m especially interested in healthcare and social good.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:medha@example.com">medha@example.com</a> or connect on <a href="https://www.linkedin.com/in/medhamorparia">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Medha Morparia. All rights reserved.</p>
+  </footer>
+</body>
+</html>
